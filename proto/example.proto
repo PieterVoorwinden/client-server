@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package example;
+
+import "google/protobuf/timestamp.proto";
+import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+
+service ExampleService {
+    rpc ListExample(ExampleRequest) returns (ExampleResponse);
+}
+
+message Example {
+    google.protobuf.Timestamp current_time = 1 [
+		(gogoproto.stdtime) = true
+	];
+}
+
+message ExampleRequest {
+}
+
+message ExampleResponse {
+    Example example = 1;
+}
