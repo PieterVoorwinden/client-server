@@ -6,8 +6,8 @@ import (
 	"time"
 
 	proto "github.com/PieterVoorwinden/client-server/proto"
-	"github.com/micro/go-micro/v2"
-	"github.com/micro/go-plugins/registry/consul/v2"
+	"github.com/go-micro/plugins/v4/registry/consul"
+	"go-micro.dev/v4"
 )
 
 type Example struct{}

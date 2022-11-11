@@ -6,9 +6,10 @@ import (
 	"time"
 
 	proto "github.com/PieterVoorwinden/client-server/proto"
-	"github.com/micro/go-micro/v2"
-	client "github.com/micro/go-micro/v2/client/grpc"
-	"github.com/micro/go-plugins/registry/consul/v2"
+
+	"github.com/go-micro/plugins/v4/registry/consul"
+	"go-micro.dev/v4"
+	client "go-micro.dev/v4/client"
 )
 
 func main() {
